@@ -21,4 +21,4 @@ Since GCP require to create the firewall rules seperatley and then apply them to
 Command used 
 gcloud beta compute firewall-rules create mhn-allow-admin --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:3000,tcp:10000 --source-ranges=0.0.0.0/0 --target-tags=mhn-admin
 
-<img src="https://i.imgflip.com/27zrzp.gif" title="made at imgflip.com"/>
+<img src="https://i.imgflip.com/27zs1q.gif" title="made at imgflip.com"/>
