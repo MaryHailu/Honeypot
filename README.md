@@ -21,4 +21,28 @@ Since GCP require to create the firewall rules seperatley and then apply them to
 Command used 
 gcloud beta compute firewall-rules create mhn-allow-admin --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:3000,tcp:10000 --source-ranges=0.0.0.0/0 --target-tags=mhn-admin
 
+Result 
+
 <img src="https://i.imgflip.com/27zs1q.gif" title="made at imgflip.com"/>
+
+### Milestone 2 : Install the MHN Admin Application 
+
+In this step we install the server and login to server using our"superuser"
+
+### Milestone 3 : Create a MHN Honeypot VM 
+
+In this step we deploy Dionaea over HTTP
+
+Dionaea is "meant to be a nepenthes successor , embedding python as scripting language, using libemu to detect shellcodes, supporting ipv6 and tls"
+
+### Milestone 4 : Install the Honeypot Application
+
+In this step we install honeypot application into the VM and wire it to connect back to the admin server.
+
+The wget command executed inside the honeypot VM to install the Dionae sorftware .
+
+wget "http://35.184.8.8/api/script/?text=true&script_id=4" -O deploy.sh && sudo bash deploy.sh http://35.184.8.8 yYw8AEVE
+
+<img src="https://i.imgflip.com/27zt00.gif" title="made at imgflip.com"/>
+
+
