@@ -65,6 +65,6 @@ ERROR: (gcloud.compute.scp) Underspecified resource [mhn-admin]. Specify the [--
 
 sudo gcloud compute scp mhn-admin:~/session.json ./session.json --zone us-central1-c     
 ERROR: (gcloud.compute.scp) Could not fetch resource:
- - Insufficient Permission
+Insufficient Permission
 
 <img src="https://i.imgflip.com/27zvyd.gif" title="made at imgflip.com"/>
