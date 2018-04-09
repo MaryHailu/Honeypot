@@ -58,4 +58,13 @@ In this step we can make sure everything is set up correctly and working by usin
 
 ### Exporting Data
 
+Attempted to download file 
+
+gcloud compute scp mhn-admin:~/session.json ./session.json
+ERROR: (gcloud.compute.scp) Underspecified resource [mhn-admin]. Specify the [--zone] flag.
+
+sudo gcloud compute scp mhn-admin:~/session.json ./session.json --zone us-central1-c     
+ERROR: (gcloud.compute.scp) Could not fetch resource:
+ - Insufficient Permission
+
 <img src="https://i.imgflip.com/27zvyd.gif" title="made at imgflip.com"/>
